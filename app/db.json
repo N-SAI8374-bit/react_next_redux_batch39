@@ -80,6 +80,15 @@
       "stock": 11,
       "description": "New Product One",
       "id": "UA8zEgW"
+    },
+    {
+      "name": "catry",
+      "sku": "ACC-00020",
+      "category": "Accessories",
+      "price": 2,
+      "stock": 12,
+      "description": "Catry item",
+      "id": "-eNarGb"
     }
   ]
 }
