@@ -1,0 +1,561 @@
+{
+  "schema": "clarification-questions/v1",
+  "generated_at": "2026-10-14T10:36:00Z",
+  "user_input": "create react js app using next js with ReactBootstrap inbuilt routing axios reduxtoolkit formik yup with json-server data to manage product CRUD operations",
+  "title": "Next.js Product CRUD App",
+  "assessment_snapshot": {
+    "intro": "The workspace is an empty Git repository with no application files or existing UI to preserve. The request specifies a new product CRUD app with:",
+    "bullets": [
+      "Next.js, React-Bootstrap, built-in routing, Axios, Redux Toolkit, Formik, and Yup",
+      "json-server as the product data API; framework and library versions are not stated",
+      "No screenshots, design tokens, API contract, or legacy data source are present"
+    ]
+  },
+  "proposed_outcome": "Create a new Next.js application with a responsive product-management interface, product create/read/update/delete flows, validated forms, Redux Toolkit state, Axios API calls, and a json-server data source. Preserve the requested technologies while confirming versions, UX/design expectations, and data/API assumptions before implementation.",
+  "scope": [
+    "frontend",
+    "backend",
+    "generic"
+  ],
+  "status": "answered",
+  "questions": [
+    {
+      "id": "F1",
+      "kit": "frontend",
+      "field": "target.framework",
+      "title": "Next.js version",
+      "question": "Which Next.js major version should the new application use?",
+      "importance": "required",
+      "impact": 5,
+      "recommended": "Next.js current stable release",
+      "default": null,
+      "prefilled": false,
+      "prefilled_value": null,
+      "answer": {
+        "value": "Next.js current stable release",
+        "source": "user"
+      },
+      "depends_on": null,
+      "options": [
+        {
+          "value": "Next.js current stable release",
+          "label": "Next.js current stable release"
+        },
+        {
+          "value": "Next.js 15",
+          "label": "Next.js 15"
+        },
+        {
+          "value": "Next.js 14",
+          "label": "Next.js 14"
+        }
+      ],
+      "allow_other": true,
+      "type": "single_select"
+    },
+    {
+      "id": "F2",
+      "kit": "frontend",
+      "field": "target.component_library",
+      "title": "React-Bootstrap version",
+      "question": "Which React-Bootstrap version should be used?",
+      "importance": "required",
+      "impact": 5,
+      "recommended": "React-Bootstrap current stable release",
+      "default": null,
+      "prefilled": false,
+      "prefilled_value": null,
+      "answer": {
+        "value": "React-Bootstrap current stable release",
+        "source": "user"
+      },
+      "depends_on": null,
+      "options": [
+        {
+          "value": "React-Bootstrap current stable release",
+          "label": "React-Bootstrap current stable release"
+        },
+        {
+          "value": "React-Bootstrap 2.x",
+          "label": "React-Bootstrap 2.x"
+        }
+      ],
+      "allow_other": true,
+      "type": "single_select"
+    },
+    {
+      "id": "F3",
+      "kit": "frontend",
+      "field": "visual.design_system",
+      "title": "Design direction",
+      "question": "What visual design direction should the new product-management interface follow?",
+      "importance": "required",
+      "impact": 4,
+      "recommended": "Clean responsive Bootstrap-based admin dashboard",
+      "default": "match existing pixel-by-pixel using extracted CSS custom properties",
+      "prefilled": false,
+      "prefilled_value": null,
+      "answer": {
+        "value": "Clean responsive Bootstrap-based admin dashboard",
+        "source": "user"
+      },
+      "depends_on": null,
+      "options": [
+        {
+          "value": "Clean responsive Bootstrap-based admin dashboard",
+          "label": "Clean responsive Bootstrap-based admin dashboard"
+        },
+        {
+          "value": "Minimal table-and-form layout",
+          "label": "Minimal table-and-form layout"
+        },
+        {
+          "value": "I will provide a design reference",
+          "label": "I will provide a design reference"
+        }
+      ],
+      "allow_other": true,
+      "type": "single_select"
+    },
+    {
+      "id": "F4",
+      "kit": "frontend",
+      "field": "compliance.accessibility",
+      "title": "Accessibility target",
+      "question": "Which accessibility standard should the app target?",
+      "importance": "recommended",
+      "impact": 3,
+      "recommended": "WCAG 2.1 AA",
+      "default": "WCAG 2.1 AA",
+      "prefilled": false,
+      "prefilled_value": null,
+      "answer": {
+        "value": "WCAG 2.1 AA",
+        "source": "user"
+      },
+      "depends_on": null,
+      "options": [
+        {
+          "value": "WCAG 2.1 AA",
+          "label": "WCAG 2.1 AA"
+        },
+        {
+          "value": "WCAG 2.2 AA",
+          "label": "WCAG 2.2 AA"
+        },
+        {
+          "value": "No specific standard",
+          "label": "No specific standard"
+        }
+      ],
+      "allow_other": true,
+      "type": "single_select"
+    },
+    {
+      "id": "F5",
+      "kit": "frontend",
+      "field": "compatibility.browsers",
+      "title": "Browser support",
+      "question": "Which browsers should the app support?",
+      "importance": "recommended",
+      "impact": 2,
+      "recommended": "Modern evergreen browsers",
+      "default": "modern evergreen (Chrome, Firefox, Safari, Edge — latest 2 major versions)",
+      "prefilled": false,
+      "prefilled_value": null,
+      "answer": {
+        "value": "Modern evergreen browsers",
+        "source": "user"
+      },
+      "depends_on": null,
+      "options": [
+        {
+          "value": "Modern evergreen browsers",
+          "label": "Modern evergreen browsers (latest Chrome, Firefox, Safari, Edge)"
+        },
+        {
+          "value": "Latest two major versions",
+          "label": "Latest two major versions of Chrome, Firefox, Safari, and Edge"
+        }
+      ],
+      "allow_other": true,
+      "type": "single_select"
+    },
+    {
+      "id": "F6",
+      "kit": "frontend",
+      "field": "responsive.breakpoints",
+      "title": "Responsive layout",
+      "question": "What responsive layout strategy should the product screens use?",
+      "importance": "recommended",
+      "impact": 3,
+      "recommended": "Mobile-first responsive layout",
+      "default": "mobile-first using existing breakpoints detected from codebase",
+      "prefilled": false,
+      "prefilled_value": null,
+      "answer": {
+        "value": "Mobile-first responsive layout",
+        "source": "user"
+      },
+      "depends_on": null,
+      "options": [
+        {
+          "value": "Mobile-first responsive layout",
+          "label": "Mobile-first responsive layout"
+        },
+        {
+          "value": "Desktop-first responsive layout",
+          "label": "Desktop-first responsive layout"
+        },
+        {
+          "value": "Desktop-only",
+          "label": "Desktop-only"
+        }
+      ],
+      "allow_other": true,
+      "type": "single_select"
+    },
+    {
+      "id": "F7",
+      "kit": "frontend",
+      "field": "i18n.locales",
+      "title": "Locales",
+      "question": "Which languages/locales should the app support?",
+      "importance": "optional",
+      "impact": 1,
+      "recommended": "English only",
+      "default": "preserve current locales; keep existing i18n library if present",
+      "prefilled": false,
+      "prefilled_value": null,
+      "answer": {
+        "value": "English only",
+        "source": "user"
+      },
+      "depends_on": null,
+      "options": [
+        {
+          "value": "English only",
+          "label": "English only"
+        },
+        {
+          "value": "Add multiple locales",
+          "label": "Add multiple locales"
+        }
+      ],
+      "allow_other": true,
+      "type": "single_select"
+    },
+    {
+      "id": "F8",
+      "kit": "frontend",
+      "field": "state_mgmt.preference",
+      "title": "State management",
+      "question": "Which client-side state approach should be used?",
+      "importance": "optional",
+      "impact": 3,
+      "recommended": "Redux Toolkit",
+      "default": "preserve existing pattern if identifiable; otherwise recommend minimal (component state + server-state library)",
+      "prefilled": true,
+      "prefilled_value": "Redux Toolkit",
+      "answer": {
+        "value": "Redux Toolkit",
+        "source": "user"
+      },
+      "depends_on": null,
+      "options": [
+        {
+          "value": "Redux Toolkit",
+          "label": "Redux Toolkit"
+        },
+        {
+          "value": "Component state only",
+          "label": "Component state only"
+        }
+      ],
+      "allow_other": true,
+      "type": "single_select"
+    },
+    {
+      "id": "F9",
+      "kit": "frontend",
+      "field": "routing.preference",
+      "title": "Next.js routing mode",
+      "question": "Which Next.js built-in routing mode should the app use?",
+      "importance": "optional",
+      "impact": 3,
+      "recommended": "App Router",
+      "default": "use the de-facto router for the chosen target framework",
+      "prefilled": true,
+      "prefilled_value": "Next.js built-in routing",
+      "answer": {
+        "value": "Next.js built-in routing",
+        "source": "user"
+      },
+      "depends_on": null,
+      "options": [
+        {
+          "value": "App Router",
+          "label": "App Router"
+        },
+        {
+          "value": "Pages Router",
+          "label": "Pages Router"
+        }
+      ],
+      "allow_other": true,
+      "type": "single_select"
+    },
+    {
+      "id": "B1",
+      "kit": "backend",
+      "field": "target.framework",
+      "title": "json-server version",
+      "question": "Which json-server version should provide the product CRUD API?",
+      "importance": "required",
+      "impact": 4,
+      "recommended": "json-server current stable release",
+      "default": null,
+      "prefilled": false,
+      "prefilled_value": null,
+      "answer": {
+        "value": "json-server current stable release",
+        "source": "user"
+      },
+      "depends_on": null,
+      "options": [
+        {
+          "value": "json-server current stable release",
+          "label": "json-server current stable release"
+        },
+        {
+          "value": "json-server 0.17.x",
+          "label": "json-server 0.17.x"
+        }
+      ],
+      "allow_other": true,
+      "type": "single_select"
+    },
+    {
+      "id": "B2",
+      "kit": "backend",
+      "field": "api.contract_preservation",
+      "title": "Product API contract",
+      "question": "What product API contract should the new app expose?",
+      "importance": "required",
+      "impact": 4,
+      "recommended": "Define a new conventional json-server CRUD API",
+      "default": "must preserve",
+      "prefilled": true,
+      "prefilled_value": "Define a new conventional json-server CRUD API",
+      "answer": {
+        "value": "Define a new conventional json-server CRUD API",
+        "source": "user"
+      },
+      "depends_on": null,
+      "options": [
+        {
+          "value": "Define a new conventional json-server CRUD API",
+          "label": "Define a new conventional json-server CRUD API"
+        },
+        {
+          "value": "I will provide an API contract to follow",
+          "label": "I will provide an API contract to follow"
+        }
+      ],
+      "allow_other": true,
+      "type": "single_select"
+    },
+    {
+      "id": "B3",
+      "kit": "backend",
+      "field": "data.migration_strategy",
+      "title": "Product data storage",
+      "question": "How should product data be initialized and persisted for this new app?",
+      "importance": "required",
+      "impact": 4,
+      "recommended": "Seed json-server from db.json; no legacy data migration",
+      "default": "TBD / assess in research phase",
+      "prefilled": true,
+      "prefilled_value": "Seed json-server from db.json; no legacy data migration",
+      "answer": {
+        "value": "Seed json-server from db.json; no legacy data migration",
+        "source": "user"
+      },
+      "depends_on": null,
+      "options": [
+        {
+          "value": "Seed json-server from db.json; no legacy data migration",
+          "label": "Seed json-server from db.json; no legacy data migration"
+        },
+        {
+          "value": "I have existing data to import",
+          "label": "I have existing data to import"
+        }
+      ],
+      "allow_other": true,
+      "type": "single_select"
+    },
+    {
+      "id": "B4",
+      "kit": "backend",
+      "field": "auth.framework",
+      "title": "Authentication",
+      "question": "Should product-management screens require authentication?",
+      "importance": "recommended",
+      "impact": 2,
+      "recommended": "No authentication for this local/demo app",
+      "default": "preserve existing auth mechanism; detect from codebase",
+      "prefilled": false,
+      "prefilled_value": null,
+      "answer": {
+        "value": "preserve existing auth mechanism; detect from codebase",
+        "source": "user"
+      },
+      "depends_on": null,
+      "options": [
+        {
+          "value": "No authentication for this local/demo app",
+          "label": "No authentication for this local/demo app"
+        },
+        {
+          "value": "Add authentication",
+          "label": "Add authentication"
+        }
+      ],
+      "allow_other": true,
+      "type": "single_select"
+    },
+    {
+      "id": "B5",
+      "kit": "backend",
+      "field": "nfr.sla",
+      "title": "Performance expectations",
+      "question": "What performance or availability expectations should apply to the json-server demo?",
+      "importance": "recommended",
+      "impact": 1,
+      "recommended": "Local development/demo use; no SLA",
+      "default": "match current production baseline; no regression",
+      "prefilled": false,
+      "prefilled_value": null,
+      "answer": {
+        "value": "match current production baseline; no regression",
+        "source": "user"
+      },
+      "depends_on": null,
+      "options": [
+        {
+          "value": "Local development/demo use; no SLA",
+          "label": "Local development/demo use; no SLA"
+        },
+        {
+          "value": "Specify production-level targets",
+          "label": "Specify production-level targets"
+        }
+      ],
+      "allow_other": true,
+      "type": "single_select"
+    },
+    {
+      "id": "G1",
+      "kit": "generic",
+      "field": "success.definition",
+      "title": "Definition of done",
+      "question": "What outcome will define success for this product CRUD application?",
+      "importance": "required",
+      "impact": 4,
+      "recommended": "Create, list, view, edit, and delete products with validated forms and json-server persistence",
+      "default": "feature parity with the current system; all existing user-facing behaviors preserved",
+      "prefilled": true,
+      "prefilled_value": "Create, list, view, edit, and delete products with validated forms and json-server persistence",
+      "answer": {
+        "value": "Create, list, view, edit, and delete products with validated forms and json-server persistence",
+        "source": "user"
+      },
+      "depends_on": null,
+      "options": [
+        {
+          "value": "Create, list, view, edit, and delete products with validated forms and json-server persistence",
+          "label": "Create, list, view, edit, and delete products with validated forms and json-server persistence"
+        },
+        {
+          "value": "CRUD flows plus additional requirements",
+          "label": "CRUD flows plus additional requirements"
+        }
+      ],
+      "allow_other": true,
+      "type": "single_select"
+    },
+    {
+      "id": "G2",
+      "kit": "generic",
+      "field": "out_of_scope",
+      "title": "Out-of-scope items",
+      "question": "Are there any features or constraints that should be explicitly excluded from this app?",
+      "importance": "recommended",
+      "impact": 1,
+      "recommended": null,
+      "default": "no explicit exclusions; agent will infer from project structure",
+      "prefilled": false,
+      "prefilled_value": null,
+      "answer": {
+        "value": "no",
+        "source": "user"
+      },
+      "depends_on": null,
+      "type": "text"
+    },
+    {
+      "id": "G3",
+      "kit": "generic",
+      "field": "existing_tests.posture",
+      "title": "Test policy",
+      "question": "How should existing tests be treated?",
+      "importance": "recommended",
+      "impact": 2,
+      "recommended": "Must pass",
+      "default": "must pass",
+      "prefilled": false,
+      "prefilled_value": null,
+      "answer": {
+        "value": "must pass",
+        "source": "user"
+      },
+      "depends_on": null,
+      "options": [
+        {
+          "value": "Must pass",
+          "label": "Must pass"
+        },
+        {
+          "value": "May be rewritten with equivalent coverage",
+          "label": "May be rewritten with equivalent coverage"
+        },
+        {
+          "value": "Write new tests from scratch",
+          "label": "Write new tests from scratch"
+        }
+      ],
+      "allow_other": true,
+      "type": "single_select"
+    },
+    {
+      "id": "G5",
+      "kit": "generic",
+      "field": "constraints.additional",
+      "title": "Additional Constraints",
+      "question": "Any additional requirements, exclusions, dependencies, compliance rules, or operational constraints?",
+      "importance": "optional",
+      "impact": 1,
+      "recommended": null,
+      "default": "None beyond the decisions listed in this specification.",
+      "prefilled": true,
+      "prefilled_value": "None beyond the decisions listed in this specification.",
+      "answer": {
+        "value": "None beyond the decisions listed in this specification.",
+        "source": "user"
+      },
+      "depends_on": null,
+      "type": "text"
+    }
+  ]
+}

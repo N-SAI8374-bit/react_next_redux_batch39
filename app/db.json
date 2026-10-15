@@ -1,0 +1,85 @@
+{
+  "products": [
+    {
+      "id": "p-1001",
+      "name": "Everyday Canvas Tote",
+      "sku": "ACC-001",
+      "category": "Accessories",
+      "price": 28,
+      "stock": 42,
+      "description": "A sturdy everyday tote made from recycled cotton canvas."
+    },
+    {
+      "id": "p-1002",
+      "name": "Ribbed Knit Beanie",
+      "sku": "APP-014",
+      "category": "Apparel",
+      "price": 32,
+      "stock": 8,
+      "description": "A soft ribbed beanie for cooler days."
+    },
+    {
+      "id": "p-1003",
+      "name": "Stoneware Planter",
+      "sku": "HOM-032",
+      "category": "Home & Living",
+      "price": 46,
+      "stock": 24,
+      "description": "Hand-finished stoneware planter with a natural matte glaze."
+    },
+    {
+      "id": "p-1004",
+      "name": "Studio Wireless Headphones",
+      "sku": "TEC-008",
+      "category": "Technology",
+      "price": 129,
+      "stock": 16,
+      "description": "Comfortable over-ear headphones with clear, balanced sound."
+    },
+    {
+      "id": "p-1005",
+      "name": "Linen Market Shirt",
+      "sku": "APP-021",
+      "category": "Apparel",
+      "price": 74,
+      "stock": 31,
+      "description": "A relaxed fit linen shirt for warm-weather layering."
+    },
+    {
+      "id": "p-1006",
+      "name": "Weekly Desk Planner",
+      "sku": "STA-005",
+      "category": "Stationery",
+      "price": 18,
+      "stock": 0,
+      "description": "An undated weekly planner with room for notes and priorities."
+    },
+    {
+      "id": "p-1007",
+      "name": "Ceramic Pour-Over Set",
+      "sku": "HOM-041",
+      "category": "Home & Living",
+      "price": 58,
+      "stock": 12,
+      "description": "A handmade ceramic dripper and matching coffee server."
+    },
+    {
+      "id": "p-1008",
+      "name": "Everyday Crossbody",
+      "sku": "ACC-012",
+      "category": "Accessories",
+      "price": 86,
+      "stock": 5,
+      "description": "A compact crossbody bag with adjustable straps and inner pockets."
+    },
+    {
+      "name": "New Product One",
+      "sku": "ACC-00045",
+      "category": "Accessories",
+      "price": 30,
+      "stock": 11,
+      "description": "New Product One",
+      "id": "UA8zEgW"
+    }
+  ]
+}

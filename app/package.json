@@ -1,0 +1,30 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "server": "json-server --watch db.json --port 4000"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.13.0",
+    "axios": "^1.20.0",
+    "bootstrap": "^5.3.8",
+    "formik": "^2.4.9",
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "19.3.0",
+    "react-redux": "^9.3.0",
+    "yup": "^1.7.1"
+  },
+  "devDependencies": {
+    "babel-plugin-react-compiler": "1.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.0",
+    "json-server": "^0.17.4"
+  }
+}
